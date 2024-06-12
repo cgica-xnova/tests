@@ -292,8 +292,8 @@ countries = {
 client = MongoClient("mongodb://mongodb:XNOVA100amazonaws@63.34.79.241:27017/xnova")  
 database = client["xnova"] 
 
-ACCESS_KEY = st.secrets['ACCESS_KEY_ID']
-SECRET_KEY = st.secrets['SECRET_ACCESS_KEY']
+ACCESS_KEY = st.secrets["AWS"]["ACCESS_KEY_ID"]
+SECRET_KEY = st.secrets["AWS"]["SECRET_ACCESS_KEY"]
 
 bedrock = boto3.client('bedrock-runtime',aws_access_key_id=ACCESS_KEY,
                             aws_secret_access_key=SECRET_KEY,
