@@ -518,6 +518,7 @@ def run_app():
 
         buscar_descripcion = st.text_input("ADVANCED SEARCH:")
         if buscar_descripcion:
+            print("Buscando...")
             st.session_state['data'] = descr_search(buscar_descripcion, st.session_state['data'])
             df_placeholder.dataframe(st.session_state['data'])
             # st.session_state['terms'] = []

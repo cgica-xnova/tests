@@ -2,5 +2,5 @@ requests
 boto3
 streamlit
 pandas
-numpy 
-pymongo 
+numpy
+pymongo
