@@ -1,0 +1,11 @@
+requests
+boto3
+json
+sys
+os
+re
+streamlit
+pandas
+numpy 
+pymongo 
+concurrent.futures
