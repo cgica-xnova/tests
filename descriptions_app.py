@@ -303,8 +303,8 @@ api_url = " https://umoe90xbt8.execute-api.eu-west-1.amazonaws.com/test/europe_c
 
 def judge_Llama3(query, description, terms):
     user_message= f"""
-    You will recieve a query, a list of terms and a description of a company. Your task is to determine if the description is relevant to both query and terms.
-    You should provide a reason why it is or not relevant. \n 
+    You will receive a query, a list of terms, and a description of a company. Your task is to determine if the description directly addresses the query and includes the listed terms.
+    You should provide a reason why it does or does not directly address the query and include the terms."\n 
 
     Query: {query} \n
     Terms: {terms} \n
