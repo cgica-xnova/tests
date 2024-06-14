@@ -303,7 +303,8 @@ api_url = " https://umoe90xbt8.execute-api.eu-west-1.amazonaws.com/test/europe_c
 
 def judge_Llama3(query, description, terms):
     user_message= f"""
-    You will receive a query, a list of terms, and a description of a company. Your task is to determine if the description directly addresses the query and includes the listed terms.
+    You will receive a query, a list of terms, and a description of a company. Your task is to determine if the description directly addresses the query and includes the listed terms do not
+    infere any topics from sentences like "high quality products".
     You should provide a reason why it does or does not directly address the query and include the terms."\n 
 
     Query: {query} \n
