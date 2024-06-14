@@ -345,6 +345,7 @@ def judge_Llama3(query, description, terms):
 def process_description(id, query, terms):
     europe_products_descr = database["europe_products_descr"]
     description = europe_products_descr.find_one({'id':id})['description']
+    terms = [term for term, country in terms]
     response = judge_Llama3(query, description, terms)
     match = re.search(r"\b(Yes|No)\b(.*)", response, re.IGNORECASE | re.DOTALL)
 
