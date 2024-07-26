@@ -299,7 +299,7 @@ bedrock = boto3.client('bedrock-runtime',aws_access_key_id=ACCESS_KEY,
                             aws_secret_access_key=SECRET_KEY,
                             region_name="us-east-1")
 
-api_url = " https://umoe90xbt8.execute-api.eu-west-1.amazonaws.com/test/europe_category_searcher"
+api_url = "https://umoe90xbt8.execute-api.eu-west-1.amazonaws.com/test/europe_category_searcher"
 
 def judge_Llama3(query, description, terms):
     user_message= f"""
